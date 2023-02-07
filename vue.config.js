@@ -1,8 +1,5 @@
 const webpack = require("webpack");
 const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-});
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -22,6 +19,7 @@ module.exports = defineConfig({
         path: false,
         stream: false,
       },
+      extensions: [".js", ".vue", ".json"],
     },
   },
 });
