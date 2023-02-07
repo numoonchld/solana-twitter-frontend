@@ -34,7 +34,6 @@ const characterLimitColour = computed(() => {
 
 // Permissions.
 // const connected = ref(true) // TODO: Check connected wallet.
-console.log('hello: ', content.value, characterLimit.value);
 const canTweet = computed(() => content.value && characterLimit.value > 0);
 const { connected } = useWallet();
 
